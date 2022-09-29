@@ -376,15 +376,16 @@ button {
 }
 
 .text-label {
-    display: block;
+    display: flex;
     position: absolute;
-    padding: 27px 0;
+    justify-content: center;
+    align-items: center;
     height: 70px;
     width: 100%;
     bottom: 0;
     font-weight: 700;
     line-height: 1.14;
-    text-align: center;
+
     text-transform: uppercase;
     color: var(--text-color);
     font-size: 14px;
@@ -849,6 +850,7 @@ label {
     color: #757575;
 }
 
+
 input {
     width: 100%;
     padding: 12px;
@@ -858,6 +860,46 @@ input {
 }
 
 textarea {
+    width: 100%;
+    resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.form-link {
+    color: #2196f3;
+}
+
+.checkbox-title {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #757575;
+}
+
+.btn {
+    display: flex;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: center;
+    justify-content: center;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: #ffffff;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+
+
 }
