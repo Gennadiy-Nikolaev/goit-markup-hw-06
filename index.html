@@ -373,24 +373,33 @@
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
-      <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-      <form name="forma">
-        <label for="name">Ім'я</label>
-        <input type="text" name="Ім'я" id="name" autofocus />
-        <label for="tel">Телефон</label>
-        <input type="tel" name="phone_number" id="tel">
-        <label for="mail">Пошта</label>
-        <input type="email" name="mail" id="mail">
-        <label for="comment">Коментар</label>
-        <textarea name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
-        <input type="checkbox" name="policy" id="policy">
-        <label for="policy">Погоджуюся з розсилкою та приймаю <span class="form-link">Умови
-            договору</label>
-        <!--<div class="checkbox">
-          <h3 class="checkbox-title">Погоджуюся з розсилкою та приймаю <span class="form-link">Умови договору</span>
-          </h3>
-        </div>-->
-        <button class="btn" type="submit">Відправити</button>
+
+      <!--Форма-->
+      <form class="form" name="forma">
+        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <div class="form-field">
+          <label for="name">Ім'я</label>
+          <input type="text" name="name" id="name" autofocus>
+        </div>
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input type="tel" name="phone_number" id="tel">
+        </div>
+        <div class="form-field">
+          <label for="mail">Пошта</label>
+          <input type="email" name="mail" id="mail">
+        </div>
+        <div class="form-field">
+          <label for="comment">Коментар</label>
+          <textarea name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
+        </div>
+        <div class="form-checkbox">
+          <input type="checkbox" name="policy" id="policy">
+          <label for="policy">Погоджуюся з розсилкою та приймаю <span class="form-link">Умови
+              договору</label>
+        </div>
+
+        <button class="form-btn" type="submit">Відправити</button>
       </form>
     </div>
   </div>
