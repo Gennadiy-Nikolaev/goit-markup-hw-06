@@ -363,9 +363,20 @@
             </li>
           </ul>
         </div>
+
+        <!--e-mail input-->
+        <div class="email-input">
+          <p class="email-input-title">Підпишіться на розсилку</p>
+          <form action=""></form>
+          <input type="email" name="mail" id="mail">
+          <label for="mail">E-mail</label>
+          <button class="email-button" type="submit">Підписатися</button>
+        </div>
       </div>
     </div>
   </footer>
+
+  <!--Модальне вікно-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-button" data-modal-close>
@@ -377,6 +388,7 @@
       <!--Форма-->
       <form class="form" name="forma">
         <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <!--<b class="form-title">Залиште свої дані, ми вам передзвонимо</b>-->
         <div class="form-field">
           <label for="name">Ім'я</label>
           <input type="text" name="name" id="name" autofocus>
@@ -393,6 +405,7 @@
           <label for="comment">Коментар</label>
           <textarea name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
         </div>
+
         <div class="form-checkbox">
           <input type="checkbox" name="policy" id="policy">
           <label for="policy">Погоджуюся з розсилкою та приймаю <span class="form-link">Умови
