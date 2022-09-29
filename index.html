@@ -376,17 +376,21 @@
       <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
       <form name="forma">
         <label for="name">Ім'я</label>
-        <input type="text" name="Ім'я" id="name">
+        <input type="text" name="Ім'я" id="name" autofocus />
         <label for="tel">Телефон</label>
         <input type="tel" name="phone_number" id="tel">
         <label for="mail">Пошта</label>
         <input type="email" name="mail" id="mail">
         <label for="comment">Коментар</label>
         <textarea name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
-        <div>
-          <h3>Погоджуюся з розсилкою та приймаю Умови договору</h3>
-        </div>
-        <button class="" type="submit">Відправити</button>
+        <input type="checkbox" name="policy" id="policy">
+        <label for="policy">Погоджуюся з розсилкою та приймаю <span class="form-link">Умови
+            договору</label>
+        <!--<div class="checkbox">
+          <h3 class="checkbox-title">Погоджуюся з розсилкою та приймаю <span class="form-link">Умови договору</span>
+          </h3>
+        </div>-->
+        <button class="btn" type="submit">Відправити</button>
       </form>
     </div>
   </div>
