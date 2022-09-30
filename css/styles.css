@@ -770,9 +770,7 @@ button {
 }
 
 /*e-mail input*/
-.email {
-    position: relative;
-}
+.email {}
 
 .email-input-title {
     color: var(--primary-background-color);
@@ -785,6 +783,7 @@ button {
 
 .email-line {
     display: flex;
+    position: relative;
 }
 
 .email-input {
@@ -800,8 +799,9 @@ button {
 
 .email-label {
     position: absolute;
-    top: 50px;
+    top: 50%;
     left: 16px;
+    transform: translateY(-50%);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
