@@ -830,6 +830,12 @@ button {
     border-radius: 4px;
 }
 
+.icon-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
 /*Модальне вікно*/
 .backdrop {
     position: fixed;
