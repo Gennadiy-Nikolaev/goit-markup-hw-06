@@ -790,6 +790,7 @@ button {
     margin-right: 12px;
     width: 358px;
     height: 50px;
+    padding: 15px 70px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -807,8 +808,6 @@ button {
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
-
 }
 
 .email-button {
@@ -834,6 +833,7 @@ button {
     width: 24px;
     height: 24px;
     margin-left: 10px;
+    fill: var(--text-color);
 }
 
 /*Модальне вікно*/
@@ -913,36 +913,51 @@ button {
     margin-bottom: 12px;
 }
 
-
 .form-field {
     display: flex;
-    position: relative;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.form-name {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    left: 12px;
-    top: 30px;
+/*div-обгортка*/
+.input-overlay {
+    position: relative;
 }
 
-.form-field label {
-    margin-bottom: 4px;
+.form-input {
+    width: 100%;
+    padding: 11px 42px;
+    outline: none;
 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms var(--timing-function);
+}
+
+.form-input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.form-field:focus .form-svg {
+    fill: var(--accent-color);
+}
+
+.form-label {
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
 }
 
-.form-field input {
-    width: 100%;
-    padding: 11px 12px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+.form-svg {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--timing-function);
 }
 
 .form-field textarea {
@@ -960,7 +975,7 @@ button {
     color: rgba(117, 117, 117, 0.5);
 }
 
-
+/*Кнопка Приймаю умови*/
 .form-link {
     color: #2196f3;
 }
@@ -981,6 +996,7 @@ button {
     color: #757575;
 }
 
+/*Кнопка Відправити*/
 .form-btn {
     display: flex;
     width: 200px;
