@@ -916,8 +916,17 @@ button {
 
 .form-field {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin-bottom: 10px;
+}
+
+.form-name {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    top: 30px;
 }
 
 .form-field label {
@@ -931,7 +940,7 @@ button {
 
 .form-field input {
     width: 100%;
-    padding: 12px;
+    padding: 11px 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
