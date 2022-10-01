@@ -934,14 +934,6 @@ button {
     transition: border 250ms var(--timing-function);
 }
 
-.form-input:focus {
-    border: 1px solid var(--accent-color);
-}
-
-.form-field:focus .form-svg {
-    fill: var(--accent-color);
-}
-
 .form-label {
     margin-bottom: 4px;
     font-size: 12px;
@@ -960,6 +952,14 @@ button {
     transition: fill 250ms var(--timing-function);
 }
 
+.form-input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.form-input:focus+.form-svg {
+    fill: var(--accent-color);
+}
+
 .form-field textarea {
     width: 100%;
     padding: 12px 16px;
@@ -975,7 +975,7 @@ button {
     color: rgba(117, 117, 117, 0.5);
 }
 
-/*Кнопка Приймаю умови*/
+/*Посилання *Приймаю умови*/
 .form-link {
     color: #2196f3;
 }
@@ -1011,7 +1011,12 @@ button {
     font-size: 16px;
     line-height: 1.87;
     color: var(--text-color);
-    background-color: var(--accent-color);
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.form-btn:hover {
+    background-color: #188CE8;
 }
