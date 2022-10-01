@@ -902,10 +902,10 @@ button {
 
 /*Form*/
 .form {
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%;
+    width: 100%;
     outline: 1px solid tomato;
-    padding: 38px 42px 40px;
+    padding: 40px;
 }
 
 .form-title {
@@ -919,6 +919,10 @@ button {
     margin-bottom: 10px;
 }
 
+.form-field:last-child {
+    margin-bottom: 0px;
+}
+
 /*div-обгортка*/
 .input-overlay {
     position: relative;
@@ -928,7 +932,6 @@ button {
     width: 100%;
     padding: 11px 42px;
     outline: none;
-
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border 250ms var(--timing-function);
