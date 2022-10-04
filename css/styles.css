@@ -1014,6 +1014,7 @@ button {
 }
 
 .form-checkbox {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
@@ -1045,7 +1046,7 @@ button {
 
 
 .hidden {
-    position: absolute;
+    position: absolute;    
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
