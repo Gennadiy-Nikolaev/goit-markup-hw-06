@@ -798,7 +798,6 @@ button {
     border-radius: 4px;
     color: var(--text-color);
     background-color: var(--secondary-background-color);
-
 }
 
 .email-input::placeholder {
